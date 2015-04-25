@@ -7,6 +7,9 @@ import (
 )
 
 func main() {
+	if len(os.Args) != 2 {
+		return
+	}
 	pwd := os.Args[1]
 
 	home := os.Getenv("HOME")
