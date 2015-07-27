@@ -14,9 +14,9 @@ func main() {
 
 	home := os.Getenv("HOME")
 	srcin := home + "/Developer/src/"
-	srcout := "~src //"
+	srcout := "~src/"
 	confin := home + "/Developer/conf/"
-	confout := "~conf:"
+	confout := "~conf/"
 
 	if strings.HasPrefix(pwd, srcin) {
 		fmt.Printf(strings.Replace(pwd, srcin, srcout, 1))
